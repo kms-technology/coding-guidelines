@@ -1,5 +1,30 @@
 # KMS Front-end Coding Guidelines
 
+- [1. Introduction](#1-introduction)
+- [2. Coding Styles](#2-coding-styles)
+    - [2.1. HTML](#2-1-html)
+    - [2.2. CSS](#2-2-css)
+    - [2.3. JavaScript](#2-3-javascript)
+    - [2.4. Angular](#2-4-angular)
+    - [2.5. React](#2-5-react)
+- [3. Boilerplate Code](#3-boilerplate-code)
+    - [3.1. Angular](#3-1-angular)
+    - [3.2. React](#3-2-react)
+- [4. Testing](#4-testing)
+    - [4.1. Unit-Testing](#4-1-unit-testing)
+    - [4.2. End-to-End Testing](#4-2-end-to-end-testing)
+- [5. Best Practices](#5-best-practices)
+    - [5.1. HTML, CSS and JavaScript](#5-1-html-css-and-javascript)
+    - [5.2. CSS Framework](#5-2-css-framework)
+    - [5.3. CSS Methodologies](#5-3-css-methodologies)
+    - [5.4. styled-components](#5-4-styled-components)
+    - [5.5. Accessibility](#5-5-accessibility)
+    - [5.6. Code Analysis Tools](#5-6-code-analysis-tools)
+    - [5.7. Project Management Tools](#5-7-project-management-tools)
+- [6. Resources & References](#6-resources--references)
+    - [6.1. Resources](#6-1-resources)
+    - [6.2. References](#6-2-references)
+
 ## 1. Introduction
 
 This document describes a collection of standards, conventions, and guidelines for writing solid Front-end code, especially, JavaScript code. They are based on sound, proven software engineering principles that lead to code that is easy to understand, to maintain, and to enhance. Furthermore, code conventions are important to programmers for a number of reasons: 
@@ -21,7 +46,7 @@ The guidelines are crafted for developers who want to take their markup further,
 
 **Full Documentation:** https://github.com/hail2u/html-best-practices/blob/master/README.md
 
-### 2.2. 
+### 2.2. CSS
 
 KMS refers to write CSS or Sass code following style guide defined by well-known community [Airbnb](https://github.com/airbnb/css).
 
