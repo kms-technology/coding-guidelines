@@ -233,7 +233,7 @@ trAccountRecycleDelete
 
 When naming your database tables, give consideration to other steps in the development process. Keep in mind you will most likely have to utilize the names you give your tables several times as part of other objects, for example, procedures, triggers or views may all contain references to the table name. You want to keep the name as simple and short as possible. Some systems enforce character limits on object names also.
 
-Singular Names:
+**Singular Names:**
 
 Table names should be singular, for example, &quot;Customer&quot; instead of &quot;Customers&quot;.Prefixes:
 
@@ -241,21 +241,21 @@ Don&#39;t use prefixes unless they are deemed necessary to help you organize you
 
 In some cases, your tables might be sharing a schema/database with other tables that are not related in any way. In this case, it is sometimes a good idea to prefix your table names with some characters that group your tables together. For example, for a healthcare application you might give your tables an &quot;Hc&quot; prefix so that all of the tables for that application would appear in alphabetized lists together. Note that even for the prefix, use PascalCase. Do not use underscores in your prefixes. The last kind of prefix that is acceptable is one that allows you to group logical units of tables. A plausible example could entail a large application (30 to 40+ tables) that handled both Payroll and Benefits data. You could prefix the tables dealing with payroll with a &quot;Pay&quot; or &quot;Prl&quot; prefix and give the tables dealing with benefits data a &quot;Ben&quot; or &quot;Bfts&quot; prefix. The goal of both this prefix and the aforementioned shared schema/database prefix is to allow you to group specific tables together alphabetically in lists and distinguish them from unrelated tables. Lastly, if a prefix is used for this purpose, the shared schema/database prefix is a higher grouping level and comes first in the name, for example, &quot;HcPayClients&quot; not &quot;PayHcClients&quot;.
 
-Notation:
+**Notation:**
 
 For all parts of the table name, including prefixes (if applicable), use Pascal Case. Using this notation will distinguish your table names from SQL keywords. For example, &quot;SELECT CustomerId, CustomerName FROM MyAppGroupTable WHERE CustomerName = &#39;%S&#39;&quot; shows the notation for the table name distinguishing it from the SQL keywords used in the query. PascalCase also reduces the need for underscores to visually separate words in names.
 
-Special Characters:
+**Special Characters:**
 
 For table names, underscores should not be used. Using PascalCase for your table name allows for the upper-case letter to denote the first letter of a new word or name. Thus there is no need to do so with an underscore character.
 
 Do not use numbers in your table names either. Do not use spaces in your table names either. While most database systems can handle names that include spaces, systems such as SQL Server require you to add brackets around the name when referencing it (like [table name] for example) which goes against the rule of keeping things as short and simple as possible.
 
-Abbreviations:
+**Abbreviations:**
 
 Avoid using abbreviations if possible. Use &quot;Account&quot; instead of &quot;Acct&quot; and &quot;Hour&quot; instead of &quot;Hr&quot;. Not everyone will always agree with you on what your abbreviations stand for - and - this makes it simple to read and understand for both developers and non-developers. Avoid using acronyms as well. If exceptions to this rule are deemed necessary, ensure that the same convention is followed by all project members.
 
-Junction a.k.a Intersection Tables:
+**Junction a.k.a Intersection Tables:**
 
 Junction tables, which handle many to many relationships, should be named by concatenating the names of the tables that have a one to many relationships with the junction table. For example, you might have &quot;Doctor&quot; and &quot;Patient&quot; tables. Since doctors can have many patients and patients can have many doctors (specialists) you need a table to hold the data for those relationships in a junction table. This table should be named DoctorPatient&quot;. Since this convention can result in lengthy table names, abbreviations sometimes may be used at your discretion.
 
@@ -263,33 +263,33 @@ Junction tables, which handle many to many relationships, should be named by con
 
 When naming your columns, keep in mind that they are members of the table, so they do not need the any mention of the table name in the name. When writing a query against the table, you should be prefixing the field name with the table name or an alias anyway. Just like with naming tables, avoid using abbreviations, acronyms or special characters. All column names should use PascalCase to distinguish them from SQL keywords.
 
-Identity Primary Key Fields:
+**Identity Primary Key Fields:**
 
 For fields that are the primary key for a table and uniquely identify each record in the table, the name should simply be [tableName] + &quot;Id&quot;(e.g.in a Customer table, the primary key field would be &quot;CustomerId&quot;. A prefix is added mainly because &quot;Id&quot; is a keyword in SQL Server and we would have to wrap it in brackets when referencing it in queries otherwise. Though CustomerId conveys no more information about the field than Customer.Id and is a far wordier implementation, it is still preferable to having to type brackets around &quot;Id&quot;.
 
-Foreign Key Fields:
+**Foreign Key Fields:**
 
 Foreign key fields should have the exact same name as they do in the parent table where the field is the primary. For example, in the Customers table the primary key field might be &quot;CustomerId&quot;. In an Orders table where the customer id is kept, it would also be &quot;CustomerId&quot;. There is one exception to this rule, which is when you have more than one foreign key field per table referencing the same primary key field in another table. In this situation, it might be helpful to add a descriptor before the field name.
 
 An example of this is if you had an Address table. You might have another table with foreign key fields like HomeAddressId, WorkAddressId, MailingAddressId, or ShippingAddressId.
 
-Composite Keys:
+**Composite Keys:**
 
 If you have tables with composite keys (more than one field makes up the unique value), it&#39;s recommended that a seeded identity column is created to use as the primary key for the table.
 
-Prefixes:
+**Prefixes:**
 
 Do not prefix your fields with &quot;fld\_&quot; or &quot;Col\_&quot; as it should be obvious in SQL statements. Do not use a data type prefix for the field either, for example, &quot;IntCustomerId&quot; for a numeric type or &quot;VcName&quot; for a varchar type. These &quot;clog up&quot; our naming and add little value; most integer fields can be easily identified as such and character fields would have to be checked for length in the Object Browser anyway.
 
-Data Type-Specific Naming:
+**Data Type-Specific Naming:**
 
 Bit fields should be given affirmative boolean names like &quot;IsDeleted&quot;, &quot;HasPermission&quot;, or &quot;IsValid&quot; so that the meaning of the data in the field is not ambiguous. If the field holds date and/or time information, the word &quot;Date&quot; or &quot;Time&quot; should appear somewhere in the field name. It is sometimes appropriate to add the unit of time to the field name also, especially if the field holds data like whole numbers (&quot;3&quot; or &quot;20&quot;). Those fields should be named like &quot;RuntimeHours&quot; or &quot;ScheduledMinutes&quot;.
 
-Field Name Length:
+**Field Name Length:**
 
 Field names should be no longer than 50 characters and all should strive for less lengthy names if possible. You should, however, not sacrifice readability for brevity and avoid using abbreviations unless it is absolutely necessary.
 
-Special Characters:
+**Special Characters:**
 
 Field names should contain only letters and numbers. No special characters, underscores or spaces should be used.
 
@@ -297,7 +297,7 @@ Field names should contain only letters and numbers. No special characters, unde
 
 Indexes will remain named as the SQL Server default, unless the index created is for a special purpose. All primary key fields and foreign key fields will be indexed and named in the SQL Server default. Any other index will be given a name indicating it&#39;s purpose.
 
-Naming Convention:
+**Naming Convention:**
 
 Indexes will remain named as the SQL Server default, unless the index created is for a special purpose, in which case the naming convention for special-purpose indexes follows this structure:
 
@@ -305,7 +305,7 @@ Indexes will remain named as the SQL Server default, unless the index created is
 
 where &quot;U/N&quot; is for unique or non-unique and &quot;IX\_&quot; matches the default prefix that SQL Server assigns indexes.
 
-Prefixes and Suffixes:
+**Prefixes and Suffixes:**
 
 Avoid putting any prefix or suffix unless it&#39;s for special purpose in certain cases.
 
@@ -313,7 +313,7 @@ Avoid putting any prefix or suffix unless it&#39;s for special purpose in certai
 
 Constraints are at the field/column level so the name of the field the constraint is on should be used in the name. The type of constraint (Check, Referential Integrity a.k.a Foreign Key, Primary Key, or Unique) should be noted also. Constraints are also unique to a particular table and field combination, so you should include the table name also to ensure unique constraint names across your set of database tables.
 
-Naming Convention:
+**Naming Convention:**
 
 The naming convention syntax for constraints looks like this:
 
@@ -329,7 +329,7 @@ The naming convention syntax for constraints looks like this:
 
 The reason underscores are used here with Pascal Case notation is so that the table name and field name are clearly separated. Without the underscore, it would become easy to get confused about where the table name stops and the field name starts.
 
-Prefixes:
+**Prefixes:**
 
 A two letter prefix gets applied to the constraint name depending on the type
 
@@ -345,11 +345,11 @@ Unique: Un
 
 Views follow many of the same rules that apply to naming tables. There are only two differences that were mentioned below. If your view combines entities with a join condition or where clause, be sure to combine the names of the entities that are joined in the name of your view.
 
-Prefixes:
+**Prefixes:**
 
 While it is pointless to prefix tables, it can be helpful for views. Prefixing your views with &quot;vw&quot; is a helpful reminder that you&#39;re dealing with a view, and not a table.
 
-View Types:
+**View Types:**
 
 Some views are simply tabular representations of one or more tables with a filter applied or because of security procedures (users given permissions on views instead of the underlying table(s) in some cases). Some views are used to generate report data with more specific values in the WHERE clause. Naming your views should be different depending on the type or purpose of the view. For simple views that just join one or more tables with no selection criteria, combine the names of the tables joined. For example, joining the &quot;Customer&quot; and &quot;StateAndProvince&quot; table to create a view of Customers and their respective geographical data should be given a name like &quot;vwCustomerStateAndProvince&quot;. Views created expressly for a report should have an additional prefix of Report applied to them, e.g. vwReportDivisionSalesFor2008.
 
@@ -357,7 +357,7 @@ Some views are simply tabular representations of one or more tables with a filte
 
 Unlike a lot of the other database objects discussed here, stored procedures are not logically tied to any table or column. Typically though, stored procedures perform one or more common database activities (Read, Insert, Update, and/or Delete) on a table, or another action of some kind. Since stored procedures always perform some type of operation, it makes sense to use a name that describes the operation they perform. Use a verb to describe the type of operation, followed by the table(s) the operations occur on.
 
-Prefixes or Suffixes:
+**Prefixes or Suffixes:**
 
 The way you name your stored procedures depends on how you want to group them within a listing. It is recommended that you have your procedures ordered by the table/business entity they perform a database operation on, and adding the database activity &quot; Get, Save, or Delete&quot; as a suffix, e.g., &quot;spProductInfoGet&quot; or &quot;spOrderSave&quot;.
 
@@ -365,7 +365,7 @@ If your procedure returns a scalar value, or performs an operation like validati
 
 The use of the &quot;sp&quot; prefix is required. This will help developers identify stored procedures and differentiate them from other non prefixed objects such as tables when viewing a listing of database objects.
 
-Bad Prefixes:
+**Bad Prefixes:**
 
 Do not prefix your stored procedures with something that will cause the system to think it is a system procedure.
 
@@ -375,11 +375,11 @@ For example, in SQL Server, if you start a procedure with &quot;sp\_&quot;, &quo
 
 Functions follow many of the same rules that apply to naming stored procedures. There are only two differences that exist so the user of the function knows they are dealing with a function and not a stored procedure and all of the details that involves (value returned, can be used in a select statement, etc.).
 
-Prefixes:
+**Prefixes:**
 
 Use &quot;fn&quot; as prefix for your Functions as a helpful reminder that you&#39;re dealing with a function, and not a stored procedure.
 
-Function Purpose:
+**Function Purpose:**
 
 Functions should be named as a verb, because they will always return a value (e.g. &quot;fnGetOpenDate&quot;, &quot;fnParseTableToString&quot;, &quot;fnFormatZip&quot;, etc.).
 
@@ -389,7 +389,7 @@ Triggers have many things in common with stored procedures. However, triggers ar
 
 We should avoid using trigger whenever possible. There are more troubles than benefits a trigger may bring us, especially, debugging and maintenance efforts. If they are deemed necessary, do it and follow rules below.
 
-Prefixes and Suffixes:
+**Prefixes and Suffixes:**
 
 To distinguish triggers from other database objects, it is helpful to add &quot;tr&quot; as a prefix, e.g. &quot;trProductInsert&quot;. Follow the &quot;tr&quot; is the table name, the operation that executes the trigger are suffixes (Insert, Update, or Delete)
 
@@ -398,11 +398,11 @@ For example:
 - --trProductValidateBarcodeInsert
 - --trProductValidateBarcodeUpdate
 
-Multiple Operations:
+**Multiple Operations:**
 
 If a trigger handles more than one operation (both INSERT and UPDATE for example) then include both operation abbreviations in your name. For example, &quot;trProductInsertUpdate&quot; or &quot;trProductUpdateDelete&quot;
 
-Multiple Triggers:
+**Multiple Triggers:**
 
 Some systems allow multiple triggers per operation per table. In this case, you should make sure the names of these triggers are easy to distinguish between, e.g. &quot;trUserValidateEmailAddressInsert&quot; and &quot;trUserMakeActionEntriesInsert&quot;.
 
@@ -410,7 +410,7 @@ Some systems allow multiple triggers per operation per table. In this case, you 
 
 Synonym is a data object that provides an alias or alternate name for another database object referred to as the base object that can exist on a local or remote server. It is typically used for abstracting the base objects, their name or location, from client application.
 
-Prefixes and Suffixes
+**Prefixes and Suffixes**
 
 As synonym definition, its name should be descriptive for its referred base object. To distinguish the base object and other database objects from synonym, use &quot;syn\_&quot; as prefix of base object name. For example:
 
@@ -419,7 +419,7 @@ As synonym definition, its name should be descriptive for its referred base obje
 - &quot;syn\_vwOutStockProduct&quot; is the synonym of &quot;vwOutStockProduct&quot; view.
 - &quot;syn\_Product&quot; is the synonym of &quot;Product&quot; table.
 
-Linked Objects in Other Database
+**Linked Objects in Other Database**
 
 In some case of synonym object refers to the object in other database, not the local database where the synonym object resides, use &quot;syn\_&lt;DatabaseName/DatabaseNameAbbreviation&gt;\_&quot; as prefix. For example, we create a synonym object for other object in HRM database, and then its name should be:
 
@@ -430,11 +430,11 @@ In some case of synonym object refers to the object in other database, not the l
 
 User-defined data types should be avoided whenever possible. They are an added processing overhead whose functionality could typically be accomplished more efficiently with simple data type variables, table variables, or temporary tables.
 
-Prefixes and Suffixes:
+**Prefixes and Suffixes:**
 
 To distinguish a user-defined data type from other database objects, it is helpful to add &quot;ud&quot; as a prefix.
 
-Special Characters:
+**Special Characters:**
 
 User-defined data type names should contain only letters, numbers and underscores. No special characters or spaces should be used.
 
@@ -442,19 +442,19 @@ User-defined data type names should contain only letters, numbers and underscore
 
 In addition to the general naming standards regarding no special characters, no spaces, and limited use of abbreviations and acronyms, common sense should prevail in naming variables; variable names should be meaningful and natural.
 
-Name length limit:
+**Name length limit:**
 
 Variable names should describe its purpose and not exceed 50 characters in length.
 
-Prefixes:
+**Prefixes:**
 
 All variables must begin with the &quot;@&quot; symbol. Do NOT user &quot;@@&quot; to prefix a variable as this signifies a SQL Server system global variable and will affect performance.
 
-Case:
+**Case:**
 
 All variables should be written in camelCase, e.g. &quot;@firstName&quot; or &quot;@city&quot; or &quot;@siteId&quot;.
 
-Special Characters:
+**Special Characters:**
 
 Variable names should contain only letters and numbers. No special characters or spaces should be used.
 
@@ -462,7 +462,7 @@ Variable names should contain only letters and numbers. No special characters or
 
 When the scope of the database is expected to be enterprise level or scalability is a great concern consider using a modular object naming convention for primary database objects such as stored procedures and views. This methodology involves identifying primary modules of the system and assigning each of those modules a prefix. When these prefixes are applied to the names of database objects this allows us to easily locate module specific procedures and database objects for easier modification and debugging.
 
-Example 1:
+**Example 1:**
 
 We have a modular system that deals with students and teacher data separately. We have defined these modules as such:
 
