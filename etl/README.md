@@ -1,6 +1,6 @@
 
 
-# KMS ELT-SSIS Coding Standards
+# KMS ETL-SSIS Coding Standards
 
   - [1. Purpose](#1-purpose)
   - [2. Common Naming Conventions](#2-common-naming-conventions)
