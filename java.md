@@ -35,7 +35,7 @@
     - [6.1. Keeping Tests Clean](#61-keeping-tests-clean)
     - [6.2. F.I.R.S.T](#62-first)
     - [6.3. Unit-Test Smells](#63-unit-test-smells)
-- [7. Design & Best Practicest](#7-design--best-practices)
+- [7. Design & Best Practices](#7-design--best-practices)
     - [7.1. Encapsulations](#71-encapsulations)
     - [7.2. Interfaces and Inheritances](#72-interfaces-and-inheritances)
     - [7.3. Structure over Convention](#73-structure-over-convention)
