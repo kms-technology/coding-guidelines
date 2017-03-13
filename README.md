@@ -13,7 +13,7 @@ You can find the coding guidelines for a specific technology in the list as belo
 * [Java](java.md)
 * [.NET with C#](dotnet.md)
 * [Front-end](front-end.md)
-* [iOS](ios.md)
+* [Objective-C](objective-c.md)
 * [Android](android.md)
 * [ETL](etl/README.md)
 * [SQL Server](sql-server.md)
