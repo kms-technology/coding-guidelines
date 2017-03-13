@@ -32,7 +32,7 @@
 
 ## 1. Purpose
 
-- Develop reliable and maintainable application code.
+- Develop reliable and maintainable application code with Object-C.
 - The naming conventions, coding standards and best practices described in this document are compiled from KMS developer&#39;s own experiences and by referring to Apple coding guidelines.
 
 ## 2. Naming
