@@ -1,5 +1,5 @@
 
-# KMS iOS Coding Standards
+# KMS Objective-C Coding Standards
 
 - [1. Purpose](#1-purpose)
 - [2. Naming](#2-naming)
