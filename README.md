@@ -18,6 +18,8 @@ You can find the coding guidelines for a specific technology in the list as belo
 * [ETL](etl/README.md)
 * [SQL Server](sql-server.md)
 
+* [Groovy](http://groovy-lang.org/style-guide.html) (from groovy-lang.org)
+
 As supporting for software development process, KMS provide the standards for:
 
 * [Code Check-in](code-checkin.md)
