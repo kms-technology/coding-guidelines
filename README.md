@@ -14,6 +14,7 @@ You can find the coding guidelines for a specific technology in the list as belo
 * [.NET with C#](dotnet.md)
 * [JavaScript](https://github.com/airbnb/javascript/blob/master/README.md) (from airbnb.io)
 * [Front-end](front-end.md)
+* [Swift](https://github.com/raywenderlich/swift-style-guide) (from raywenderlich.com)
 * [Objective-C](objective-c.md)
 * [Android](android.md)
 * [ETL](etl/README.md)
