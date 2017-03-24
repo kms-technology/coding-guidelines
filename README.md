@@ -12,6 +12,7 @@ You can find the coding guidelines for a specific technology in the list as belo
 
 * [Java](java.md)
 * [.NET with C#](dotnet.md)
+* [JavaScript](https://github.com/airbnb/javascript/blob/master/README.md) (from airbnb.io)
 * [Front-end](front-end.md)
 * [Objective-C](objective-c.md)
 * [Android](android.md)
