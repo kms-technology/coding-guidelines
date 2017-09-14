@@ -7,7 +7,7 @@
     - [2.3. JavaScript](#23-javascript)
     - [2.4. AngularJS](#24-angularjs)
     - [2.5. Angular](#25-angular)
-    - [2.5. React](#25-react)
+    - [2.6. React](#26-react)
 - [3. Boilerplate Code](#3-boilerplate-code)
     - [3.1. Angular](#31-angular)
     - [3.2. React](#32-react)
@@ -69,15 +69,15 @@ As an important thing about JavaScript performance, the guideline points out cas
 
 **Full Documentation:** https://github.com/airbnb/javascript/blob/master/README.md
 
-### 2.4. AngularJS (1.x with ES5, ES6+)
+### 2.4. AngularJS
 
-KMS refers to develop an AngularJS application using ES5 or ES6+ by folloiwing the popular style guide provided/maintained by [John Papa](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+KMS refers to develop an AngularJS (1.x) application using ES5 or ES6+ by folloiwing the popular style guide provided/maintained by [John Papa](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
 
 **Full Documentation:** https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 
-### 2.5. Angular (2+ with TypeScript)
+### 2.5. Angular
 
-KMS refers to develop an Angular application using TypeScript by following the style guide provided by the official [Angular](https://angular.io/docs/ts/latest/guide/style-guide.html) website.
+KMS refers to develop an Angular (2+) application using TypeScript by following the style guide provided by the official [Angular](https://angular.io/docs/ts/latest/guide/style-guide.html) website.
 
 Angular Style Guide presents fully conventions and, as importantly, it explains why to do that.
 
