@@ -5,8 +5,8 @@
     - [2.1. HTML](#21-html)
     - [2.2. CSS](#22-css)
     - [2.3. JavaScript](#23-javascript)
-    - []xx
-    - [2.4. Angular](#24-angular)
+    - [2.4. AngularJS](#24-angularjs)
+    - [2.5. Angular](#25-angular)
     - [2.5. React](#25-react)
 - [3. Boilerplate Code](#3-boilerplate-code)
     - [3.1. Angular](#31-angular)
