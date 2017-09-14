@@ -5,6 +5,7 @@
     - [2.1. HTML](#21-html)
     - [2.2. CSS](#22-css)
     - [2.3. JavaScript](#23-javascript)
+    - []xx
     - [2.4. Angular](#24-angular)
     - [2.5. React](#25-react)
 - [3. Boilerplate Code](#3-boilerplate-code)
@@ -68,15 +69,21 @@ As an important thing about JavaScript performance, the guideline points out cas
 
 **Full Documentation:** https://github.com/airbnb/javascript/blob/master/README.md
 
-### 2.4. Angular
+### 2.4. AngularJS (1.x with ES5, ES6+)
 
-KMS refers to develop an Angular application by following the style guide provided by the official [Angular](https://angular.io/docs/ts/latest/guide/style-guide.html) website.
+KMS refers to develop an AngularJS application using ES5 or ES6+ by folloiwing the popular style guide provided/maintained by [John Papa](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+
+**Full Documentation:** https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
+
+### 2.5. Angular (2+ with TypeScript)
+
+KMS refers to develop an Angular application using TypeScript by following the style guide provided by the official [Angular](https://angular.io/docs/ts/latest/guide/style-guide.html) website.
 
 Angular Style Guide presents fully conventions and, as importantly, it explains why to do that.
 
 **Full Documentation:** https://angular.io/docs/ts/latest/guide/style-guide.html
 
-### 2.5. React
+### 2.6. React
 
 KMS refers to follow React and JSX Style Guide defined by well-known community [Airbnb](https://github.com/airbnb/javascript).
 
