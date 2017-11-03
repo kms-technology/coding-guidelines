@@ -22,9 +22,10 @@
     - [5.5. Accessibility](#55-accessibility)
     - [5.6. Code Analysis Tools](#56-code-analysis-tools)
     - [5.7. Project Management Tools](#57-project-management-tools)
-- [6. Resources & References](#6-resources--references)
-    - [6.1. Resources](#61-resources)
-    - [6.2. References](#62-references)
+- [6. Checklist](#6-checklist)
+- [7. Resources & References](#7-resources--references)
+    - [7.1. Resources](#71-resources)
+    - [7.2. References](#72-references)
 
 ## 1. Introduction
 
@@ -213,6 +214,10 @@ Using [Web Accessibility Checklist](http://a11yproject.com/checklist.html) for y
 
 * [NPM](https://www.npmjs.com/) as the package manager for JavaScript
 * Consider using _pre-defined_ npm scripts as a build tool instead of Gulp or Grunt
+
+## 6. Checklist
+
+There is a Front-end checklist, an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production. It is based on Front-End developers’ years of experience, with the additions coming from some other open-source checklists. Detail list is at [Front-end Checklist](http://frontendchecklist.com/) 
 
 ## 6. Resources & References
 
