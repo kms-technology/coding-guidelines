@@ -219,9 +219,9 @@ Using [Web Accessibility Checklist](http://a11yproject.com/checklist.html) for y
 
 There is a Front-end checklist, an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production. It is based on Front-End developers’ years of experience, with the additions coming from some other open-source checklists. Detail list is at [Front-end Checklist](http://frontendchecklist.com/) 
 
-## 6. Resources & References
+## 7. Resources & References
 
-### 6.1. Resources
+### 7.1. Resources
 - [HTML Best Practices](https://github.com/hail2u/html-best-practices/blob/master/README.md)
 - [Airbnb CSS / Sass Style Guide](https://github.com/airbnb/css/blob/master/README.md)
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript/blob/master/README.md)
@@ -229,7 +229,7 @@ There is a Front-end checklist, an exhaustive list of all elements you need to h
 - [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/blob/master/react/README.md)
 - [Web Accessibility Checklist](http://a11yproject.com/checklist.html)
 
-### 6.2. References
+### 7.2. References
 - [Front-end Guidelines Questionnaire](https://github.com/bradfrost/frontend-guidelines-questionnaire)
 - [5 Questions Every Unit Test Must Answer](https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d#.8yjo9e8a7)
 - [Bootstrap - An Intervention](https://evilmartians.com/chronicles/bootstrap-an-intervention)
