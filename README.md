@@ -10,19 +10,25 @@ The KMS coding conventions and best practices are compiled not only from KMS dev
 
 You can find the coding guidelines for a specific technology in the list as below:
 
-* [Java](java.md)
 * [.NET with C#](dotnet.md)
-* [JavaScript](https://github.com/airbnb/javascript/blob/master/README.md) (from airbnb.io)
-* [Web Front-end](web-front-end.md)
-* [Swift](https://github.com/raywenderlich/swift-style-guide) (from raywenderlich.com)
-* [Objective-C](https://github.com/raywenderlich/objective-c-style-guide) (from raywenderlich.com)
 * [Android](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md) (from ribot.co.uk)
 * [Clojure](https://github.com/bbatsov/clojure-style-guide) (from batsov.com)
-* [ETL](etl/README.md)
-* [SQL Server](sql-server.md)
-
+* [Java](java.md)
+* [JavaScript](https://github.com/airbnb/javascript/blob/master/README.md) (from airbnb.io)
+* [Kotlin](https://kotlinlang.org/docs/reference/coding-conventions.html) (from kotlinlang.org)
+* [Go](https://golang.org/doc/effective_go.html) (from golang.com)
 * [Groovy](http://groovy-lang.org/style-guide.html) (from groovy-lang.org)
+* [Objective-C](https://github.com/raywenderlich/objective-c-style-guide) (from raywenderlich.com)
+* [Python](https://www.python.org/dev/peps/pep-0008/) (from python.org)
+* [Ruby](https://github.com/bbatsov/ruby-style-guide) (from batsov.com)
+* [Scala] (http://docs.scala-lang.org/style/) (from scala-lang.org)
+* [Swift](https://github.com/raywenderlich/swift-style-guide) (from raywenderlich.com)
+* [Web Front-end](web-front-end.md)
 
 As supporting for software development process, KMS provide the standards for:
 
 * [Code Check-in](code-checkin.md)
+* [ETL](etl/README.md)
+* [SQL Server](sql-server.md)
+
+In case of no coding guidelines for a specific technology listed in above, consider to use a popular coding guidelines that maintainces by community at this link https://github.com/Kristories/awesome-guidelines
