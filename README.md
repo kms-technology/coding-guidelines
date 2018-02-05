@@ -17,7 +17,7 @@ You can find the coding guidelines for a specific technology in the list as belo
 * [Swift](https://github.com/raywenderlich/swift-style-guide) (from raywenderlich.com)
 * [Objective-C](https://github.com/raywenderlich/objective-c-style-guide) (from raywenderlich.com)
 * [Android](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md) (from ribot.co.uk)
-* [Clojure](https://github.com/bbatsov/clojure-style-guide) (from http://batsov.com)
+* [Clojure](https://github.com/bbatsov/clojure-style-guide) (from batsov.com)
 * [ETL](etl/README.md)
 * [SQL Server](sql-server.md)
 
