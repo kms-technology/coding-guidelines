@@ -13,7 +13,7 @@ You can find the coding guidelines for a specific technology in the list as belo
 * [Java](java.md)
 * [.NET with C#](dotnet.md)
 * [JavaScript](https://github.com/airbnb/javascript/blob/master/README.md) (from airbnb.io)
-* [Front-end](front-end.md)
+* [Web Front-end](web-front-end.md)
 * [Swift](https://github.com/raywenderlich/swift-style-guide) (from raywenderlich.com)
 * [Objective-C](https://github.com/raywenderlich/objective-c-style-guide) (from raywenderlich.com)
 * [Android](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md) (from ribot.co.uk)
