@@ -198,7 +198,7 @@
 ```csharp
   public class Command
   {
-    private bool canExecute = false;
+    private bool _canExecute = false;
     public bool CanExecute { get; }
     public bool HasExecute { get; }
   }
@@ -822,9 +822,9 @@ To improve performance, it is possible to use either the Tester-Doer Pattern or 
   // DO 
   internal class Window
   {
-    private string title;
-    private int width;
-    private int height;
+    private string _title;
+    private int _width;
+    private int _height;
   }
 ```
 
