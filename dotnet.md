@@ -133,7 +133,7 @@
   <td>
     <pre>public class MessageQueue
 {
-    private Queue&lt;Message&gt; internalQueue;
+    private Queue&lt;Message&gt; _internalQueue;
 }</pre>
   </td>
 </tr>
